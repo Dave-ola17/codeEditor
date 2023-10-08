@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Studio</title>
+    <link rel="stylesheet" href="style3.css">
+    <!-- link to fontawsome for icons -->
+    <script src="https://kit.fontawesome.com/e3b9eebe7d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div style="text-align: center; padding-top: 10px;">
+        <h2 style="font-size: 24px; font-family: 'Times New Roman', Times, serif; ">Dave's Code Studio</h2>
+    </div>
+    <div class='container'>
+        <div class="left">
+            <label><i class="fa-brands fa-html5 fa-bounce"></i>HTML</label>
+            <textarea id="html-code"  onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-css3 fa-beat-fade"></i>CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-js fa-spin"></i>javaScript</label>
+            <textarea id="javascript-code" onkeyup="run()"></textarea>
+            
+        </div>
+        <div class="right">
+            <label><i class="fa-sharp fa-solid fa-circle-play"></i>Output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <script id="javascript-code" src="sandbox3.js"></script>
+</body>
+</html>
